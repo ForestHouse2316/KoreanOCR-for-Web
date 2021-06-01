@@ -20,3 +20,6 @@ https://aihub.or.kr/aidata/133/download
 
 * CLOVA 의 OCR 모델  
   https://github.com/clovaai/deep-text-recognition-benchmark
+
+* Python Selenium 의 웹페이지 소스코드 수정  
+https://stackoverflow.com/questions/39543237/python-selenium-modifying-the-source-code-of-a-webpage
