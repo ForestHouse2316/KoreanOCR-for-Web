@@ -18,5 +18,5 @@ https://github.com/songys/AwesomeKorean_Data
 https://aihub.or.kr/aidata/133/download  
   =>시간관계상 인쇄체 Syllable만 사용
 
-* CLOVA 의 모델  
+* CLOVA 의 OCR 모델  
   https://github.com/clovaai/deep-text-recognition-benchmark
