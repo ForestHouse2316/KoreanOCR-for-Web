@@ -17,3 +17,6 @@ https://github.com/songys/AwesomeKorean_Data
 * AI Hub 대용량 한글 데이터셋 (손글씨, 글꼴, 단어 단위, 실생활) (수십 GB 단위 용량)  
 https://aihub.or.kr/aidata/133/download  
   =>시간관계상 인쇄체 Syllable만 사용
+
+* CLOVA 의 모델  
+  https://github.com/clovaai/deep-text-recognition-benchmark
