@@ -1,5 +1,5 @@
 # KoreanOCR-for-Web
-Using AI_OCR to enhance accessibility about web's image resources.
+AI_OCR for enhancement of accessibility about web's image resources.
 ---
 
 [Sources]
