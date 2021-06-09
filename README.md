@@ -21,6 +21,6 @@ https://aihub.or.kr/aidata/133/download
 * Python Selenium 의 웹페이지 소스코드 수정  
 https://stackoverflow.com/questions/39543237/python-selenium-modifying-the-source-code-of-a-webpage
 
-- 추가적인 사이트  
+- E.g. 사이트  
 https://junstar92.tistory.com/154
 https://cvml.tistory.com/21
