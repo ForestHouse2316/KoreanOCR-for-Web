@@ -33,5 +33,5 @@ https://junstar92.tistory.com/154
 - 신경학개론(기초 ~ 최적화)  
 https://sacko.tistory.com/10
   
-- 배치 정규화 심화설명
+- 배치 정규화 심화설명  
 https://gaussian37.github.io/dl-concept-batchnorm/
