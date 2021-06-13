@@ -35,3 +35,6 @@ https://sacko.tistory.com/10
   
 - 배치 정규화 심화설명  
 https://gaussian37.github.io/dl-concept-batchnorm/
+
+- Anaconda Virture Env 에서의 TensorFlow 및 cuDNN 설치법
+https://broscoding.tistory.com/331
