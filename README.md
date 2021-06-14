@@ -42,5 +42,5 @@ https://broscoding.tistory.com/331
 -----
 ## Structures
 - Train.py - Start point of train
-- Model.py -
+- Model.py - 예제에 나와있는 모델 구조로, 나는 BatchNormalization 하나 더 깔았다.
 ![Failed to load](/Model-Structure.png)
