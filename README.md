@@ -1,8 +1,8 @@
 # KoreanOCR-for-Web
 AI_OCR for enhancement of accessibility about web's image resources.
----
 
-[Sources]
+
+## Sources & References
 (취소선은 미사용 소스)  
 
 * ~~Binary형 이미지 데이터셋  (1GB 이하)
@@ -47,3 +47,18 @@ https://broscoding.tistory.com/331
 - Model.py & Model.ipynb(test file) - CNN 모델 파일. `.ipynb`는 아래에 있는 현재 구성된 모델의 구성도를 만들기 위해 사용된 파일입니다.
 ![Failed to load](/Model-Structure.png)
 - WebController.py - `Selenium`을 이용하는 웹 접근용 파일
+
+-----
+## Processing sequence  
+  
+### Model Training
+#### Composing Training Dataset
+먼저 AI Hub 에서 가져온 syllable 데이터에서 현대한글 2350 자만을 사용하기 위해 `.json` 파일에서 2350자에 해당하는 메타데이터를 추출하여 `.csv` 에 정리합니다.  
+`Train.py`를 실행하면, 이 `.csv`를 통해 `DatasetBuilder.py`에서 학습 데이터셋의 정보를 배열에 담아 리턴합니다.  
+#### Training
+가져온 데이터 정보로 학습을 시작합니다. 각 데이터는 상기한 모델 구조를 돌게 됩니다.  
+매 학습마다 `TrainCallback.py`를 keras 모듈이 콜백하여 학습 진행 현황 데이터를 넘겨줍니다.  
+학습률은 0.001, epoch는 10입니다.  
+10 epoch 를 돌며 가장 정확도가 크고 손실이 낮은 모델을 자동으로 `\Korean OCR\saved_model` 에 저장해둡니다.  
+### Webpage Modifying
+#### Opening Window Assigned to WebDriver
