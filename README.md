@@ -46,7 +46,7 @@ https://broscoding.tistory.com/331
 - TrainCallback.py - 학습중 학습 현황 표시와 모델저장을 위한 콜백 클래스
 - Model.py & Model.ipynb(test file) - CNN 모델 파일. `.ipynb`는 아래에 있는 현재 구성된 모델의 구성도를 만들기 위해 사용된 파일입니다.
 ![Failed to load](/Model-Structure.png)
-- WebController.py - `Selenium`을 이용하는 웹 접근용 파일
+- WebController.py - elenium을 이용하는 웹 접근용 파일
 
 -----
 ## Processing sequence  
@@ -62,3 +62,10 @@ https://broscoding.tistory.com/331
 10 epoch 를 돌며 가장 정확도가 크고 손실이 낮은 모델을 자동으로 `\Korean OCR\saved_model` 에 저장해둡니다.  
 ### Webpage Modifying
 #### Opening Window Assigned to WebDriver
+사용자가 `WebDriver.exe`(Chrome version) 에 의해 열린 창을 통해 인터넷 검색을 한다고 가정합니다.  
+`WebController.py`는 초기에는 해당 창을 띄우기만 할뿐, 특정 사이트에 자동으로 접속하거나 데이터를 긁어오지는 않습니다.  
+Selenium에서 드라이버를 연결한 후 `input()`에서 무한루프를 돌며 사용자의 응답을 기다립니다.
+#### Replacing HTML Element
+`input()`무한루프에서는 현재 기준 두 가지 명령어를 받습니다. `[Enter]`와 `exit` 입니다.
+사용자가 엔터키를 누르게 되면 Selenium은 현재 페이지의 HTML을 가져와 이미지가 있는지 분석합니다.
+이미지가 있다면 
