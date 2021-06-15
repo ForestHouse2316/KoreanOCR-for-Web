@@ -1,0 +1,22 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+GPUCheck.py
+*.png
+/Korean OCR/syllable/
+/Korean OCR/syllable/cuda_11.3.1_win10_network.exe
+/Korean OCR/syllable/cudnn-11.3-windows-x64-v8.2.1.32.zip
+/Korean OCR/cuda/
+/Korean OCR/profiler-master/
+/Korean OCR/cuda_11.3.1_win10_network.exe
+/Korean OCR/cudnn-11.3-windows-x64-v8.2.1.32.zip
+/logs/
+/misc.xml
+/modules.xml
+/vcs.xml
+/.idea/inspectionProfiles/
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/vcs.xml
+/inspectionProfiles/
+/.idea/
