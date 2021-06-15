@@ -41,6 +41,9 @@ https://broscoding.tistory.com/331
 
 -----
 ## Structures
-- Train.py - Start point of train
-- Model.py - 예제에 나와있는 모델 구조로, 나는 BatchNormalization 하나 더 깔았다.
+- Train.py - 학습 시작 지점
+- DatasetBuilder.py - AI Hub 가 제공하는 `.json`에서 한글 2350종류만 추출하여 정리한 `.csv`를 통해 학습을 위한 데이터셋 정보 생성
+- TrainCallback.py - 학습중 학습 현황 표시와 모델저장을 위한 콜백 클래스
+- Model.py & Model.ipynb(test file) - This is the example's CNN model structure. (중간에 BatchNomarlization가 추가됨. 주석 참고)
 ![Failed to load](/Model-Structure.png)
+- WebController.py - `Selenium`을 이용하는 웹 접근용 파일
