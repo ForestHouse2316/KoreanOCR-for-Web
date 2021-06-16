@@ -61,7 +61,7 @@ https://broscoding.tistory.com/331
 학습률은 0.001, epoch는 10입니다.  
 10 epoch 를 돌며 가장 정확도가 크고 손실이 낮은 모델을 자동으로 `\Korean OCR\saved_model` 에 저장해둡니다.  
 
------
+---
 ### Webpage Modifying
 #### Opening Window Assigned to WebDriver
 사용자가 `WebDriver.exe`(Chrome version) 에 의해 열린 창을 통해 인터넷 검색을 한다고 가정합니다.  
