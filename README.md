@@ -60,6 +60,7 @@ https://broscoding.tistory.com/331
 매 학습마다 `TrainCallback.py`를 keras 모듈이 콜백하여 학습 진행 현황 데이터를 넘겨줍니다.  
 학습률은 0.001, epoch는 10입니다.  
 10 epoch 를 돌며 가장 정확도가 크고 손실이 낮은 모델을 자동으로 `\Korean OCR\saved_model` 에 저장해둡니다.  
+
 -----
 ### Webpage Modifying
 #### Opening Window Assigned to WebDriver
