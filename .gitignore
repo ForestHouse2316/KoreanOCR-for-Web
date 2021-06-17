@@ -20,3 +20,6 @@ GPUCheck.py
 /.idea/vcs.xml
 /inspectionProfiles/
 /.idea/
+/Korean OCR/Model Structure.svg
+/.env/
+/Deleter.py
