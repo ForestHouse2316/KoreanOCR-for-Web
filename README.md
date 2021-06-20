@@ -78,3 +78,11 @@ Selenium에서 드라이버를 연결한 후 `input()`에서 무한루프를 돌
 ![Failed to load](/Document/img_src_query2.png)
 - Changed web's 
 ![Failed to load](/Document/changed_web.png)
+
+-----
+
+## Result
+잘 학습시켰음에도 학습된 데이터의 양이 너무 적은지, PPT에서 폰트로 글자를 찍어내면 잘 인식하지만 일반 웹상의 글자를 인식하지는 못한다.  
+글자 `이코노미스트`를 넣은 결과로 `디크그디그크` 처럼 모양을 다르게 하거나 소위 '야민정음' 처럼 한 두 획을 제하거나 더해야 나오는 모양의 글자로 인식이 되었다.  
+과적합은 아닌 것으로 보이는 것이, 10에포크만을 돌렸고 대략 8에포크 정도의 결과를 썼기 때문에 단순 데이터의 양과 종류가 부족했던 것으로 생각된다.  
+또한 Image Preprocessing -> Text Detection -> Text Recognizing 순으로 절차를 밟아야 하지만 Text Detection에 대한 이해가 너무 부족해 구현하지 못했다는 한계가 있다.
