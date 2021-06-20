@@ -45,7 +45,7 @@ https://broscoding.tistory.com/331
 - DatasetBuilder.py - AI Hub 가 제공하는 `.json`에서 한글 2350종류만 추출하여 정리한 `.csv`를 통해 학습을 위한 데이터셋 정보 생성
 - TrainCallback.py - 학습중 학습 현황 표시와 모델저장을 위한 콜백 클래스
 - Model.py & Model.ipynb(test file) - CNN 모델 파일. `.ipynb`는 아래에 있는 현재 구성된 모델의 구성도를 만들기 위해 사용된 파일입니다.
-![Failed to load](/Model-Structure.png)
+![Failed to load](/Document/Model-Structure.png)
 - WebController.py - elenium을 이용하는 웹 접근용 파일
 
 -----
@@ -72,3 +72,9 @@ Selenium에서 드라이버를 연결한 후 `input()`에서 무한루프를 돌
 사용자가 엔터키를 누르게 되면 Selenium은 현재 페이지의 HTML을 가져와 이미지가 있는지 분석합니다.  
 이미지가 있다면 해당 이미지를 다운받아 가공하여 이미지 안의 글자를 텍스트 형태로 반환합니다.  
 페이지 소스에서 분석이 완료된 이미지 element를 지워 그 자리에 반환된 텍스트를 넣습니다.
+
+- Downloading images
+![Failed to load](/Document/img_src_query1.png)
+![Failed to load](/Document/img_src_query2.png)
+- Changed web's 
+![Failed to load](/Document/changed_web.png)
