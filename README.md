@@ -41,6 +41,16 @@ https://gaussian37.github.io/dl-concept-batchnorm/
 - Anaconda Virture Env 에서의 TensorFlow 및 cuDNN 설치법  
 https://broscoding.tistory.com/331
 
+## Environment Setting
+-----
+python == 3.7.x (conda virtual environment)
+tensorflow == 2.3.0
+pandas == latest ver
+numpy == latest ver
+cv2 == latest ver
+cuda == 11.3.1
+cudnn == cudnn for cuda 11
+
 -----
 ## Structures
 > - `Document` - README.md 에 쓰이는 이미지 리소스
