@@ -41,12 +41,14 @@ https://broscoding.tistory.com/331
 
 -----
 ## Structures
-- Train.py - 학습 시작 지점
-- DatasetBuilder.py - AI Hub 가 제공하는 `.json`에서 한글 2350종류만 추출하여 정리한 `.csv`를 통해 학습을 위한 데이터셋 정보 생성
-- TrainCallback.py - 학습중 학습 현황 표시와 모델저장을 위한 콜백 클래스
-- Model.py & Model.ipynb(test file) - CNN 모델 파일. `.ipynb`는 아래에 있는 현재 구성된 모델의 구성도를 만들기 위해 사용된 파일입니다.
+- `Train.py` - 학습 시작 지점
+- `DatasetBuilder.py` - AI Hub 가 제공하는 `.json`에서 한글 2350종류만 추출하여 정리한 `.csv`를 통해 학습을 위한 데이터셋 정보 생성
+- `TrainCallback.py` - 학습중 학습 현황 표시와 모델저장을 위한 콜백 클래스
+- `Recognizer.py` - 학습된 모델을 이용하여 추론하는 메서드를 담은 클래스
+- `WebController.py` - Selenium을 이용하는 웹 접근용 파일
+- `WebControllerForLocal.py` - `Text Detection`의 부재와 `urlretrieve()`의 로컬파일 다운 불가 문제로 로컬 `.html`에 대해 동작하는 별도의 파일
+- `Model.py` & Model.ipynb(test file) - CNN 모델 파일. `.ipynb`는 아래에 있는 현재 구성된 모델의 구성도를 만들기 위해 사용된 파일입니다.
 ![Failed to load](/Document/Model-Structure.png)
-- WebController.py - elenium을 이용하는 웹 접근용 파일
 
 -----
 ## Processing sequence  
