@@ -10,8 +10,8 @@ from Recognizer import Recognizer  # 파이썬의 클래스 개념이란.....?
 
 |필독|
 urlretrieve 가 로컬파일에 대하여 작동하지 않으므로 로컬파일 전용 테스트 파일 WebControllerForLocal.py 로 분리했습니다.
-온라인에서(e.g. 네이버, 구글, etc.) 모든 사진을 다운받는 과정을 체크하시고 싶으시다면 README.md를 참고하여 이 파일을 실행하시기 바랍니다.
-Recognizing 과정을 보시고 싶으시다면 WebControllerForLocal.py 파일을 실행하시기 바랍니다.
+WebControllerForLocal.py 와는 사용법이 약간 다릅니다. 이 파일은 /WebExample/web.html 에 대해서만 작동합니다.
+그러므로 크롬에서 해당 로컬 html의 절대경로를 입력하셔야 합니다. 이후 과정은 기본 메뉴얼과 동일합니다.
 
 '''
 
@@ -48,14 +48,17 @@ while True:
             print(img)  #tuple(enum, img_link)
             try:
                 ul.urlretrieve(img[1], f'./Temp/{img[0]}.png')  # 이미지는 temp에 따온 순서의 번호로 이름을 지정
-            except :  # HTTPError 인데 모듈 임포트 다시 해야해서 특정 안함
+            except Exception as e:  # HTTPError 인데 모듈 임포트 다시 해야해서 특정 안함
                 try:
+                    print(e)
                     print("Trying another way to retrieve img . . .")
                     ul.urlretrieve(page_url + img[1], f'./Temp/{img[0]}.png')
                 except: pass
 
         print("Recognizing character . . .")
-        predictions = Recognizer.recognizeImages('./Temp/')
+        # predictions = Recognizer.recognizeImages('./WebExample/temp')
+        predictions = Recognizer.recognizeImages('./WebExample/temp')
+        print(predictions)
 
 
 
