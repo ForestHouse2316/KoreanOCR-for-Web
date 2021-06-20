@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 import tensorflow as tf
 # from IPython.display import SVG

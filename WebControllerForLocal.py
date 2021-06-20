@@ -5,6 +5,7 @@ import shutil
 import os
 from Recognizer import Recognizer  # 파이썬의 클래스 개념이란.....?
 
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 '''
 
@@ -30,11 +31,11 @@ while True:
         soup = bs(driver.page_source, 'html.parser')
 
         print("Analyzing page source . . .")
-        img_elements = soup.select("img")  # image elements list
-        print(img_elements)
+        img_element_codes = soup.select("img")  # image elements list
+        print(img_element_codes)
         page_url = driver.current_url
         img_src = []
-        for element in img_elements:
+        for element in img_element_codes:
             src = element.attrs['src']
             img_src.append(src)
 
@@ -56,10 +57,12 @@ while True:
                 except: pass
 
         print("Recognizing character . . .")
-        # predictions = Recognizer.recognizeImages('./WebExample/temp')
         predictions = Recognizer.recognizeImages('./WebExample/temp')
         print(predictions)
-
+        img_elements = driver.find_elements_by_tag_name('img')
+        for char in enumerate(predictions):  #[ID , Predicted Char]
+            driver.execute_script(f"arguments[0].alt= '{char[1]}'",img_elements[char[0]])
+            driver.execute_script(f"arguments[0].src= ''", img_elements[char[0]])
 
 
 
