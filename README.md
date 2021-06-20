@@ -43,13 +43,13 @@ https://broscoding.tistory.com/331
 
 ## Environment Setting
 -----
-python == 3.7.x (conda virtual environment)
-tensorflow == 2.3.0
-pandas == latest ver
-numpy == latest ver
-cv2 == latest ver
-cuda == 11.3.1
-cudnn == cudnn for cuda 11
+python == 3.7.x (conda virtual environment)  
+tensorflow == 2.3.0  
+pandas == latest ver  
+numpy == latest ver  
+cv2 == latest ver  
+cuda == 11.3.1  
+cudnn == cudnn for cuda 11  
 
 -----
 ## Structures
